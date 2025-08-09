@@ -9,7 +9,7 @@
   <body class="bg-slate-950 p-0 text-gray-100">
     <header>
       <nav
-        class="sticky top-0 w-full z-50 bg-white/2 backdrop-blur-md text-white p-4 shadow-lg"
+        class="sticky top-0 w-full z-50 bg-white/3 backdrop-blur-[8px] text-white p-4"
       >
         <div class="container mx-auto flex items-center justify-between">
           <!-- Logo -->
@@ -35,13 +35,15 @@
             <a href="#" class="hover:text-blue-400">Contact</a>
           </div>
         </div>
-
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="md:hidden hidden flex-col space-y-4 mt-4">
-          <a href="#" class="block hover:text-blue-400">Home</a>
-          <a href="#" class="block hover:text-blue-400">Shop</a>
-          <a href="#" class="block hover:text-blue-400">Contact</a>
-        </div>
+      </nav>
+      <!-- Mobile Menu -->
+      <nav
+        id="mobile-menu"
+        class="absolute top-[48.3px] w-full z-50 bg-white/3 backdrop-blur-[8px] text-white p-4 flex-col space-y-2 mt-4 shadow-2xs md:hidden hidden"
+      >
+        <a href="#" class="block hover:text-blue-400">Home</a>
+        <a href="#" class="block hover:text-blue-400">Shop</a>
+        <a href="#" class="block hover:text-blue-400">Contact</a>
       </nav>
 
       <!-- HERO SECTION -->
@@ -65,7 +67,7 @@
             <br />
             of Mobile
           </h1>
-          <p class="text-[1.2rem] text-slate-400">
+          <p class="text-[1.18rem] text-slate-400 m-[0.11rem]">
             Experience cutting-edge technology with our premium <br />collection
             of smart gadgets. From flagship devices to <br />
             budget-friendly options, find your perfect match.
@@ -90,7 +92,7 @@
           >
             <div class="flex align-middle space-x-2">
               <ion-icon
-                class="bg-indigo-500 rounded-full p-[.3rem]"
+                class="bg-indigo-500/50 backdrop-blur-lg rounded-full p-[.3rem]"
                 name="flash-outline"
                 aria-hidden="true"
               ></ion-icon>
@@ -98,7 +100,7 @@
             </div>
             <div class="flex align-middle space-x-2">
               <ion-icon
-                class="bg-indigo-500 rounded-full p-[.3rem]"
+                class="bg-indigo-500/50 backdrop-blur-lg rounded-full p-[.3rem]"
                 name="shield-outline"
                 aria-hidden="true"
               ></ion-icon>
@@ -106,7 +108,7 @@
             </div>
             <div class="flex align-middle space-x-2">
               <ion-icon
-                class="bg-indigo-500 rounded-full p-[.3rem]"
+                class="bg-indigo-500/50 backdrop-blur-lg rounded-full p-[.3rem]"
                 name="phone-portrait-outline"
                 aria-hidden="true"
               ></ion-icon>
