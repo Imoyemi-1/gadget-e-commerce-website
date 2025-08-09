@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Gadgets Online - Smartech Store</title>
   </head>
-  <body class="bg-slate-950 p-0">
+  <body class="bg-slate-950 p-0 text-gray-100">
     <header>
       <nav
-        class="fixed top-0 w-full z-50 bg-white/5 backdrop-blur-md text-white p-4"
+        class="sticky top-0 w-full z-50 bg-white/2 backdrop-blur-md text-white p-4 shadow-lg"
       >
         <div class="container mx-auto flex items-center justify-between">
           <!-- Logo -->
@@ -45,8 +45,85 @@
       </nav>
 
       <!-- HERO SECTION -->
-      <section class=""></section>
+      <section class="p-3">
+        <div
+          class="flex flex-col align-middle justify-center text-center gap-[1.9rem]"
+        >
+          <div class="text-sm text-center">
+            <ion-icon
+              name="star-outline"
+              class="text-green-600 text-base -m-0.5"
+            ></ion-icon>
+            Trusted by 10M+ users worldwide
+          </div>
+          <h1 class="text-5xl/16 font-extrabold line">
+            Discover the <br />
+            <span
+              class="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% bg-clip-text text-transparent"
+              >Future</span
+            >
+            <br />
+            of Mobile
+          </h1>
+          <p class="text-[1.2rem] text-slate-400">
+            Experience cutting-edge technology with our premium <br />collection
+            of smart gadgets. From flagship devices to <br />
+            budget-friendly options, find your perfect match.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row sm:items-center sm:justify-center sm:gap-x-6 gap-y-4 mb-3"
+          >
+            <a
+              href="#"
+              class="rounded-md bg-indigo-600 px-4.5 py-2.5 text-base font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 flex items-center gap-2 justify-center"
+              >Shop Now
+              <ion-icon
+                name="arrow-forward-outline"
+                aria-hidden="true"
+                class="mt-1"
+              ></ion-icon>
+            </a>
+            <a href="#" class="text-base/6 font-semibold">Watch Demo</a>
+          </div>
+          <div
+            class="text-slate-300 flex justify-center align-middle space-x-3"
+          >
+            <div class="flex align-middle space-x-2">
+              <ion-icon
+                class="bg-indigo-500 rounded-full p-[.3rem]"
+                name="flash-outline"
+                aria-hidden="true"
+              ></ion-icon>
+              <p class="text-sm/6.5">Fast Delivery</p>
+            </div>
+            <div class="flex align-middle space-x-2">
+              <ion-icon
+                class="bg-indigo-500 rounded-full p-[.3rem]"
+                name="shield-outline"
+                aria-hidden="true"
+              ></ion-icon>
+              <p class="text-sm/6.5">2-Year Warranty</p>
+            </div>
+            <div class="flex align-middle space-x-2">
+              <ion-icon
+                class="bg-indigo-500 rounded-full p-[.3rem]"
+                name="phone-portrait-outline"
+                aria-hidden="true"
+              ></ion-icon>
+              <p class="text-sm/6.5">Latest Models</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
     <script type="module" src="/src/main.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
