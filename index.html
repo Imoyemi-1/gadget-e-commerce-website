@@ -7,49 +7,47 @@
     <title>Best Gadgets Online - Smartech Store</title>
   </head>
   <body class="bg-slate-950 p-0 text-base text-gray-100 overflow-x-hidden">
+    <nav
+      class="sticky top-0 w-full z-50 bg-white/3 backdrop-blur-[8px] text-white p-4"
+    >
+      <div class="container mx-auto flex items-center justify-between">
+        <!-- Logo -->
+        <a href="#" class="flex items-center">
+          <img
+            src="./src/image/Smarte-removebg-preview 1.png"
+            alt="Smartech logo"
+            class="h-8 object-cover"
+          />
+        </a>
+
+        <!-- Hamburger Button (Mobile) -->
+        <button id="menu-btn" class="md:hidden flex flex-col space-y-1">
+          <span class="block w-6 h-0.5 bg-white"></span>
+          <span class="block w-6 h-0.5 bg-white"></span>
+          <span class="block w-6 h-0.5 bg-white"></span>
+        </button>
+
+        <!-- Menu Links -->
+        <div id="menu" class="hidden md:flex space-x-6">
+          <a href="#" class="hover:text-blue-400">Home</a>
+          <a href="#" class="hover:text-blue-400">Shop</a>
+          <a href="#" class="hover:text-blue-400">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Mobile Menu -->
+    <nav
+      id="mobile-menu"
+      class="absolute top-[48.3px] w-full z-50 bg-white/3 backdrop-blur-[8px] text-white p-4 flex-col space-y-2 mt-4 shadow-2xs md:hidden hidden"
+    >
+      <a href="#" class="block hover:text-blue-400">Home</a>
+      <a href="#" class="block hover:text-blue-400">Shop</a>
+      <a href="#" class="block hover:text-blue-400">Contact</a>
+    </nav>
     <header>
       <div
         class="absolute top-20 left-10 w-72 h-72 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full blur-3xl opacity-20"
       ></div>
-
-      <nav
-        class="sticky top-0 w-full z-50 bg-white/3 backdrop-blur-[8px] text-white p-4"
-      >
-        <div class="container mx-auto flex items-center justify-between">
-          <!-- Logo -->
-          <a href="#" class="flex items-center">
-            <img
-              src="./src/image/Smarte-removebg-preview 1.png"
-              alt="Smartech logo"
-              class="h-8 object-cover"
-            />
-          </a>
-
-          <!-- Hamburger Button (Mobile) -->
-          <button id="menu-btn" class="md:hidden flex flex-col space-y-1">
-            <span class="block w-6 h-0.5 bg-white"></span>
-            <span class="block w-6 h-0.5 bg-white"></span>
-            <span class="block w-6 h-0.5 bg-white"></span>
-          </button>
-
-          <!-- Menu Links -->
-          <div id="menu" class="hidden md:flex space-x-6">
-            <a href="#" class="hover:text-blue-400">Home</a>
-            <a href="#" class="hover:text-blue-400">Shop</a>
-            <a href="#" class="hover:text-blue-400">Contact</a>
-          </div>
-        </div>
-      </nav>
-      <!-- Mobile Menu -->
-      <nav
-        id="mobile-menu"
-        class="absolute top-[48.3px] w-full z-50 bg-white/3 backdrop-blur-[8px] text-white p-4 flex-col space-y-2 mt-4 shadow-2xs md:hidden hidden"
-      >
-        <a href="#" class="block hover:text-blue-400">Home</a>
-        <a href="#" class="block hover:text-blue-400">Shop</a>
-        <a href="#" class="block hover:text-blue-400">Contact</a>
-      </nav>
-
       <!-- HERO SECTION -->
       <section
         class="p-3 space-y-4 flex flex-col md:flex-row justify-center gap-y-10 pt6"
@@ -313,6 +311,10 @@
           </div>
         </article>
       </section>
+      <button class="cursor-pointer hover:text-blue-600">
+        <span> View All Products </span>
+        <ion-icon name="eye-outline"></ion-icon>
+      </button>
     </main>
     <script type="module" src="/src/main.js"></script>
     <script
