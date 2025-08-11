@@ -30,17 +30,15 @@ menuBtn.addEventListener('click', () => {
 document.addEventListener('DOMContentLoaded', () => {
   const productSection = document.querySelector('#product-section');
 
-  // Initial AOS
-  AOS.init({ once: true, offset: 100 });
+  AOS.init({
+    once: false, // allow repeat
+    offset: 100,
+  });
 
-  // Re-trigger animation when section comes back into view
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          productSection.querySelectorAll('.product-card').forEach((card) => {
-            card.classList.remove('aos-animate');
-          });
           setTimeout(() => {
             AOS.refresh();
           }, 50);
