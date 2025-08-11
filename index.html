@@ -5,6 +5,9 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Gadgets Online - Smartech Store</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
   </head>
   <body class="bg-slate-950 p-0 text-base text-gray-100 overflow-x-hidden">
     <nav
@@ -38,7 +41,7 @@
     <!-- Mobile Menu -->
     <nav
       id="mobile-menu"
-      class="absolute top-[48.3px] w-full z-50 bg-white/3 backdrop-blur-[8px] text-white p-4 flex-col space-y-2 mt-4 shadow-2xs md:hidden hidden"
+      class="fixed top-[48.3px] w-full z-50 bg-white/3 backdrop-blur-[8px] text-white p-4 flex-col space-y-2 mt-4 shadow-2xs md:hidden hidden animate-zoom-in"
     >
       <a href="#" class="block hover:text-blue-400">Home</a>
       <a href="#" class="block hover:text-blue-400">Shop</a>
@@ -50,10 +53,12 @@
       ></div>
       <!-- HERO SECTION -->
       <section
-        class="p-3 space-y-4 flex flex-col md:flex-row justify-center gap-y-10 pt6"
+        class="p-3 space-y-4 flex flex-col lg:flex-row justify-center gap-y-10 pt6"
       >
         <div
-          class="flex flex-col align-middle justify-center text-center gap-[1.9rem] backdrop-blur-lg bg-slate-950/20"
+          class="flex flex-col items-center lg:items-start lg:text-start justify-center text-center gap-[1.9rem] lg:gap-[1.5rem] backdrop-blur-lg bg-slate-950/20 lg:pt-8 lg:pl-8"
+          data-aos="fade-down"
+          data-aos-duration="800"
         >
           <div class="text-sm text-center">
             <ion-icon
@@ -62,24 +67,24 @@
             ></ion-icon>
             Trusted by 10M+ users worldwide
           </div>
-          <h1 class="text-5xl/16 font-extrabold line">
+          <h1 class="text-5xl/16 font-extrabold lg:text-7xl/20">
             Discover the <br />
             <span
-              class="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% bg-clip-text text-transparent"
+              class="bg-gradient-to-r from-blue-500 from-10% via-sky-500 via-30% to-indigo-800 to-90% bg-clip-text text-transparent"
               >Future</span
             >
             <br />
             of Mobile
           </h1>
           <p
-            class="text-[1.25rem] text-slate-400 mb-2 max-w-[35rem] text-pretty m-auto"
+            class="text-[1.25rem] text-slate-400 mb-2 max-w-[35rem] lg:max-w-[30rem] text-pretty"
           >
             Experience cutting-edge technology with our premium collection of
             smart gadgets. From flagship devices to budget-friendly options,
             find your perfect match.
           </p>
           <div
-            class="flex flex-col sm:flex-row sm:items-center sm:justify-center sm:gap-x-6 gap-y-4 mb-8"
+            class="flex flex-col sm:flex-row sm:items-center sm:justify-center sm:gap-x-6 gap-y-4 mb-3 lg:mb-10"
           >
             <a
               href="#"
@@ -129,26 +134,90 @@
           <div
             class="absolute -left-30 -top-15 w-26 h-16 bg-gradient-to-tr from-green-400 to-purple-700 rounded-full blur-3xl opacity-100"
           ></div>
-          <article
-            class="bg-white/1 w-100 p-6 flex flex-col rounded-4xl gap-y-5 backdrop-blur-lg shadow-xlg"
-          >
-            <img
-              src="./src/image/apple_iphone-16-pro.png"
-              alt="Iphone 16 pro"
-              class="max-w-60 m-auto"
-            />
-            <div>
-              <h3 class="font-roboto text-lg font-[600] font-stretch-110%">
-                Iphone 16 Pro Max
-              </h3>
-              <p class="text-slate-400 text-sm mb-1.5">Natural Titanium</p>
-              <p class="font-roboto text-blue-600 font-[600] text-xl">$1,299</p>
+          <div class="swiper mySwiper hero-swiper max-w-sm mx-auto">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide flex justify-center">
+                <article
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  data-aos-delay="100"
+                  class="bg-white/1 w-100 p-6 flex flex-col rounded-4xl gap-y-5 backdrop-blur-lg shadow-xlg"
+                >
+                  <img
+                    src="./src/image/apple_iphone-16-pro.png"
+                    alt="iPhone 16 Pro"
+                    class="w-full h-[444px] object-contain"
+                  />
+                  <div>
+                    <h3 class="text-lg font-[600] font-stretch-110%">
+                      Iphone 16 Pro Max
+                    </h3>
+                    <p class="text-slate-400 text-sm mb-1.5">
+                      Natural Titanium
+                    </p>
+                    <p class="font-roboto text-blue-600 font-[600] text-xl">
+                      $1,299
+                    </p>
+                  </div>
+                </article>
+              </div>
+              <!-- Slide 2 -->
+              <div class="swiper-slide flex justify-center">
+                <article
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  data-aos-delay="100"
+                  class="bg-white/1 w-100 p-6 flex flex-col rounded-4xl gap-y-5 backdrop-blur-lg shadow-xlg"
+                >
+                  <img
+                    src="./src/image/samsung-s25-ultra.png"
+                    alt="samsung s25 ultra"
+                    class="w-full h-[444px] object-contain"
+                  />
+                  <div>
+                    <h3 class="text-lg font-[600] font-stretch-110%">
+                      Samsung s25 ultra
+                    </h3>
+                    <p class="text-slate-400 text-sm mb-1.5">
+                      Natural Titanium
+                    </p>
+                    <p class="font-roboto text-blue-600 font-[600] text-xl">
+                      $1,299
+                    </p>
+                  </div>
+                </article>
+              </div>
+              <!-- Slide 3 -->
+              <div class="swiper-slide flex justify-center">
+                <article
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  data-aos-delay="100"
+                  class="bg-white/1 w-100 p-6 flex flex-col rounded-4xl gap-y-5 backdrop-blur-lg shadow-xlg"
+                >
+                  <img
+                    src="./src/image/google-pixel-9-pro.png"
+                    alt="google pixel 9 pro"
+                    class="w-full max-h-[444px] h-auto object-contain"
+                  />
+                  <div>
+                    <h3 class="text-lg font-[600] font-stretch-110%">
+                      Google pixel 9 pro
+                    </h3>
+                    <p class="text-slate-400 text-sm mb-1.5">
+                      Natural Titanium
+                    </p>
+                    <p class="font-roboto text-blue-600 font-[600] text-xl">
+                      $1,299
+                    </p>
+                  </div>
+                </article>
+              </div>
             </div>
-          </article>
-          <div class="flex gap-1.5 justify-center">
-            <div class="w-3 h-3 rounded-full bg-slate-600"></div>
-            <div class="w-3 h-3 rounded-full bg-slate-600"></div>
-            <div class="w-3 h-3 rounded-full bg-slate-600"></div>
+
+            <!-- Pagination dots -->
+            <div class="swiper-pagination mt-10"></div>
           </div>
         </div>
       </section>
@@ -175,11 +244,15 @@
       </p>
 
       <section
+        id="product-section"
         class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-4 py-10"
       >
         <!-- Gadget Card -->
         <article
-          class="relative bg-white/5 backdrop-blur-md border border-white/20 rounded-2xl shadow-lg p-5 text-white hover:scale-[1.02] transition-transform duration-300 w-full"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-easing="ease-out-back"
+          class="product-card relative bg-white/5 backdrop-blur-md border border-white/20 rounded-2xl shadow-lg p-5 text-white hover:scale-[1.02] transition-transform duration-300 w-full"
         >
           <!-- Tag Badge -->
           <span
@@ -212,7 +285,10 @@
           </div>
         </article>
         <article
-          class="relative bg-white/5 backdrop-blur-md border border-white/20 rounded-2xl shadow-lg p-5 text-white hover:scale-[1.02] transition-transform duration-300 w-full"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-easing="ease-out-back"
+          class="product-card relative bg-white/5 backdrop-blur-md border border-white/20 rounded-2xl shadow-lg p-5 text-white hover:scale-[1.02] transition-transform duration-300 w-full"
         >
           <!-- Tag Badge -->
           <span
@@ -245,7 +321,10 @@
           </div>
         </article>
         <article
-          class="relative bg-white/5 backdrop-blur-md border border-white/20 rounded-2xl shadow-lg p-5 text-white hover:scale-[1.02] transition-transform duration-300 w-full"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-easing="ease-out-back"
+          class="product-card relative bg-white/5 backdrop-blur-md border border-white/20 rounded-2xl shadow-lg p-5 text-white hover:scale-[1.02] transition-transform duration-300 w-full"
         >
           <!-- Tag Badge -->
           <span
@@ -278,7 +357,10 @@
           </div>
         </article>
         <article
-          class="relative bg-white/5 backdrop-blur-md border border-white/20 rounded-2xl shadow-lg p-5 text-white hover:scale-[1.02] transition-transform duration-300 w-full"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-easing="ease-out-back"
+          class="product-card relative bg-white/5 backdrop-blur-md border border-white/20 rounded-2xl shadow-lg p-5 text-white hover:scale-[1.02] transition-transform duration-300 w-full"
         >
           <!-- Tag Badge -->
           <span
@@ -318,15 +400,17 @@
         <ion-icon name="eye-outline"></ion-icon>
       </button>
     </main>
-    <footer class="px-6 pt-10 text-slate-500/50 backdrop-blur-lg">
-      <div class="grid gap-6 border-b border-b-gray-600">
-        <div class="">
+    <footer class="px-6 pt-10 text-slate-300/50 backdrop-blur-lg">
+      <div
+        class="grid md:grid-cols-2 lg:[grid-template-columns:400px_repeat(3,minmax(0,1fr))] lg:gap-4 md:gap-10 gap-6 border-b border-b-gray-600"
+      >
+        <div class="w-">
           <img
             src="./src/image/Smarte-removebg-preview 1.png"
             alt="Smartech logo"
             class="object-cover w-30 mb-4"
           />
-          <p class="max-w-100 mb-5">
+          <p class="max-w-100 lg:min-w-96 mb-5">
             Your trusted destination for premium smartphones and accessories. We
             bring you the latest technology with unbeatable prices and
             exceptional service.
@@ -421,7 +505,9 @@
           </div>
         </div>
       </div>
-      <div class="flex flex-col text-center text-sm text-slate-400 gap-1 py-6">
+      <div
+        class="flex flex-col md:flex-row md:gap-4 md:justify-between text-center text-sm text-slate-400 gap-1 py-6"
+      >
         <div>© 2025 Smartech. All rights reserved.</div>
         <div class="flex justify-center gap-5 font-medium">
           <a href="#">Terms of Service</a>
