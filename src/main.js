@@ -47,6 +47,5 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     { threshold: 0.1 }
   );
-
-  observer.observe(productSection);
+  if (productSection) observer.observe(productSection);
 });
