@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Gadgets Online - Smartech Store</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  </head>
+  <body class="bg-slate-950 p-0 text-base text-gray-100 overflow-x-hidden">
+    <nav
+      class="sticky top-0 w-full z-50 bg-white/3 backdrop-blur-[8px] text-white p-4"
+    >
+      <div class="container mx-auto flex items-center justify-between">
+        <!-- Logo -->
+        <a href="#" class="flex items-center">
+          <img
+            src="./src/image/Smarte-removebg-preview 1.png"
+            alt="Smartech logo"
+            class="h-8 object-cover"
+          />
+        </a>
+
+        <!-- Hamburger Button (Mobile) -->
+        <button id="menu-btn" class="md:hidden flex flex-col space-y-1">
+          <span class="block w-6 h-0.5 bg-white"></span>
+          <span class="block w-6 h-0.5 bg-white"></span>
+          <span class="block w-6 h-0.5 bg-white"></span>
+        </button>
+
+        <!-- Menu Links -->
+        <div id="menu" class="hidden md:flex space-x-6">
+          <a
+            href="/"
+            class="hover:text-blue-400 hover:underline underline-offset-4 transition-all duration-300"
+            >Home</a
+          >
+          <a
+            href="/shop.html"
+            class="hover:text-blue-400 hover:underline underline-offset-4 transition-all duration-300"
+            >Shop</a
+          >
+          <a
+            href="/about.html"
+            class="text-blue-400 underline hover:text-blue-400 hover:underline underline-offset-4 transition-all duration-300"
+            >About Us</a
+          >
+          <a
+            href="/contact.html"
+            class="hover:text-blue-400 hover:underline underline-offset-4 transition-all duration-300"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- Mobile Menu -->
+    <nav
+      id="mobile-menu"
+      class="fixed top-[48.3px] w-full z-50 bg-white/3 backdrop-blur-[8px] text-white p-4 flex-col space-y-2 mt-4 shadow-2xs md:hidden hidden animate-zoom-in"
+    >
+      <a href="/" class="block hover:text-blue-400">Home</a>
+      <a href="/shop.html" class="block hover:text-blue-400">Shop</a>
+      <a href="/about.html" class="block text-blue-400 hover:text-blue-400"
+        >About Us</a
+      >
+      <a href="/contact.html" class="block hover:text-blue-400">Contact</a>
+    </nav>
+
+    <header
+      class="text-center bg-black/10 backdrop-blur-lg py-20 px-4 space-y-6"
+    >
+      <div
+        class="absolute top-1/2 left-1/2 -translate-1/2 w-full h-56 bg-gradient-to-tr from-amber-950 to-blue-700 rounded-full blur-3xl opacity-30"
+      ></div>
+      <span
+        class="flex items-center w-fit m-auto px-2 gap-0.5 text-sm bg-gradient-to-r from-blue-500 from-10% via-sky-500 via-30% to-indigo-800 to-90% rounded-xl mb-5"
+      >
+        <ion-icon name="headset-outline"></ion-icon> 15+ Years of Excellence
+      </span>
+      <h1 class="text-5xl lg:text-5xl font-bold">
+        About
+        <span
+          class="bg-gradient-to-r from-blue-500 from-10% via-sky-500 via-30% to-indigo-800 to-90% bg-clip-text text-transparent"
+          >Smartech
+        </span>
+      </h1>
+      <p
+        class="text-xl lg:text-center lg:max-w-2xl text-slate-400 text-pretty m-auto"
+      >
+        Have questions about our products or need technical support? Our expert
+        team is here to help. Reach out through your preferred method and get
+        personalized assistance.
+      </p>
+    </header>
+
+    <footer
+      class="px-6 pt-10 text-slate-300/50 backdrop-blur-lg border-t border-slate-500"
+    >
+      <div
+        class="grid md:grid-cols-2 lg:[grid-template-columns:400px_repeat(3,minmax(0,1fr))] lg:gap-4 md:gap-10 gap-6 border-b border-b-gray-600"
+      >
+        <div class="w-">
+          <img
+            src="./src/image/Smarte-removebg-preview 1.png"
+            alt="Smartech logo"
+            class="object-cover w-30 mb-4"
+          />
+          <p class="max-w-100 lg:min-w-96 mb-5">
+            Your trusted destination for premium smartphones and accessories. We
+            bring you the latest technology with unbeatable prices and
+            exceptional service.
+          </p>
+          <div class="space-y-3">
+            <p class="text-white font-medium">Stay Updated</p>
+            <div class="flex gap-4 text-white">
+              <input
+                type="email"
+                class="bg-black w-full py-2 px-4 rounded-md"
+                placeholder="Enter your email"
+              />
+              <button
+                class="bg-gradient-to-r from-blue-500 from-10% to-blue-950 to-90% px-5 rounded-lg"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-3">
+          <p class="text-white font-medium">Quick Links</p>
+          <div class="flex flex-col gap-3">
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a href="#">FAQ</a>
+          </div>
+        </div>
+        <div class="space-y-3">
+          <p class="text-white font-medium">Support</p>
+          <div class="flex flex-col gap-3">
+            <a href="#">Customer Service</a>
+            <a href="#">Warranty</a>
+            <a href="#">Returns & Exchanges</a>
+            <a href="#">Shipping Info</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+        <div class="space-y-2 pb-8">
+          <p class="text-white font-medium">Contact Info</p>
+          <div class="flex flex-col gap-3">
+            <div class="flex items-center gap-3 text-sm">
+              <ion-icon
+                class="text-lg text-blue-700"
+                name="location-outline"
+              ></ion-icon>
+              <p>123 Tech Street <br />Silicon Valley, CA 94000</p>
+            </div>
+            <div class="flex items-center gap-3 text-sm">
+              <ion-icon
+                class="text-lg text-blue-700"
+                name="call-outline"
+              ></ion-icon>
+              <a href="tel:+123456789">+1 (234) 567-8900</a>
+            </div>
+            <div class="flex items-center gap-3 text-sm">
+              <ion-icon
+                class="text-lg text-blue-700"
+                name="mail-outline"
+              ></ion-icon>
+              <a href="mailto:info@Smartech.com">info@Smartech.com</a>
+            </div>
+          </div>
+          <p class="text-white font-medium mt-6 mb-3">Follow Us</p>
+          <div class="flex ml-8 gap-6">
+            <a href="facebook.com "
+              ><ion-icon
+                class="text-xl text-white hover:text-blue-500 transition-colors duration-300"
+                name="logo-facebook"
+              ></ion-icon
+            ></a>
+            <a href="twitter.com"
+              ><ion-icon
+                class="text-xl text-white hover:text-[#1DA1F2] transition-colors duration-300"
+                name="logo-twitter"
+              ></ion-icon
+            ></a>
+            <a href="instagram.com"
+              ><ion-icon
+                class="text-xl text-white hover:text-[#E4405F] transition-colors duration-300"
+                name="logo-instagram"
+              ></ion-icon
+            ></a>
+            <a href="youtube.com"
+              ><ion-icon
+                class="text-xl text-white hover:text-[#FF0000] transition-colors duration-300"
+                name="logo-youtube"
+              ></ion-icon
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex flex-col md:flex-row md:gap-4 md:justify-between text-center text-sm text-slate-400 gap-1 py-6"
+      >
+        <div>© 2025 Smartech. All rights reserved.</div>
+        <div class="flex justify-center gap-5 font-medium">
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+        <div>
+          Built By
+          <a href="/" class="font-medium text-blue-800"
+            >Imoyemi<ion-icon name="logo-github"></ion-icon
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
