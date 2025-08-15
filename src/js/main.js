@@ -31,6 +31,7 @@ mobileMenu.addEventListener('click', (e) => {
   const list = e.target.closest('.nav-item');
   if (list) {
     mobileMenu.classList.add('hidden');
+    document.querySelector('footer input').value = '';
   }
 });
 
