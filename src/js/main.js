@@ -27,6 +27,13 @@ menuBtn.addEventListener('click', () => {
   mobileMenu.classList.toggle('hidden');
 });
 
+mobileMenu.addEventListener('click', (e) => {
+  const list = e.target.closest('.nav-item');
+  if (list) {
+    mobileMenu.classList.add('hidden');
+  }
+});
+
 document.addEventListener('DOMContentLoaded', () => {
   const productSection = document.querySelector('#product-section');
 

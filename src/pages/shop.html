@@ -1,0 +1,271 @@
+<header class="text-center bg-black/10 backdrop-blur-lg py-16 px-4 space-y-4">
+  <h1 class="text-[2.1rem] lg:text-5xl font-bold">
+    Shop
+    <span
+      class="bg-gradient-to-r from-blue-500 from-10% via-sky-500 via-30% to-indigo-800 to-90% bg-clip-text text-transparent"
+      >Premium Gadgets</span
+    >
+  </h1>
+  <p
+    class="text-[1.25rem] lg:text-center lg:max-w-2xl text-slate-400 text-pretty m-auto"
+  >
+    Discover our complete collection of smartphones from top brands. Find your
+    perfect device with advanced filtering and expert recommendations.
+  </p>
+</header>
+<section
+  class="flex flex-col lg:flex-row lg:justify-between gap-y-8 p-4 text-slate-500 border-b border-b-slate-500"
+>
+  <input
+    type="email"
+    class="bg-black/0 w-full py-2 px-4 rounded-md lg:max-w-96"
+    placeholder="Search phones, brands, feature..."
+  />
+  <div class="flex justify-center gap-x-4">
+    <p class="p-1"><span>2</span> products found</p>
+    <button>
+      <ion-icon
+        name="list-outline"
+        aria-hidden="true"
+        class="text-2xl cursor-pointer hover:bg-blue-300 hover:text-blue-900 rounded-sm p-1 transition-colors duration-300"
+      ></ion-icon>
+    </button>
+  </div>
+</section>
+<main class="py-8 px-6 flex flex-col lg:flex-row">
+  <section class="px-6 lg:pr-28 space-y-6">
+    <h3 class="flex items-center gap-x-2">
+      <ion-icon
+        class="text-2xl text-blue-800"
+        name="options-outline"
+      ></ion-icon>
+      <span class="font-semibold">Filters</span>
+    </h3>
+    <div class="">
+      <h3 class="font-semibold mb-3">Category</h3>
+      <label class="flex items-center gap-1.5 text-[0.938rem]">
+        <input type="radio" name="category" checked />
+        <span class="text-nowrap">All Categories</span>
+        <span class="text-xs text-slate-500">(24)</span>
+      </label>
+      <label class="flex items-center gap-1.5 text-[0.938rem]">
+        <input type="radio" name="category" />
+        <span>Phone</span>
+        <span class="text-xs text-slate-500">(8)</span>
+      </label>
+      <label class="flex items-center gap-1.5 text-[0.938rem]">
+        <input type="radio" name="category" />
+        <span>Laptop</span>
+        <span class="text-xs text-slate-500">(8)</span>
+      </label>
+    </div>
+    <div class="">
+      <h3 class="font-semibold mb-3">Brand</h3>
+      <label class="flex items-center gap-1.5 text-[0.938rem]">
+        <input type="radio" name="brand" checked />
+        <span class="text-nowrap">All Brands</span>
+        <span class="text-xs text-slate-500">(24)</span>
+      </label>
+      <label class="flex items-center gap-1.5 text-[0.938rem]">
+        <input type="radio" name="brand" />
+        <span>Apple</span>
+        <span class="text-xs text-slate-500">(8)</span>
+      </label>
+      <label class="flex items-center gap-1.5 text-[0.938rem]">
+        <input type="radio" name="brand" />
+        <span>Samsung</span>
+        <span class="text-xs text-slate-500">(8)</span>
+      </label>
+    </div>
+    <div class="">
+      <h3 class="font-semibold mb-3">Price Range</h3>
+      <label class="flex items-center gap-1.5 text-[0.938rem]">
+        <input type="radio" name="price" checked />
+        <span class="text-nowrap">All Prices</span>
+        <span class="text-xs text-slate-500">(24)</span>
+      </label>
+      <label class="flex items-center gap-1.5 text-[0.938rem]">
+        <input type="radio" name="price" />
+        <span>Under $300</span>
+        <span class="text-xs text-slate-500">(8)</span>
+      </label>
+      <label class="flex items-center gap-1.5 text-[0.938rem]">
+        <input type="radio" name="price" />
+        <span>$300-$600</span>
+        <span class="text-xs text-slate-500">(8)</span>
+      </label>
+      <label class="flex items-center gap-1.5 text-[0.938rem]">
+        <input type="radio" name="price" />
+        <span>$600-$1000</span>
+        <span class="text-xs text-slate-500">(8)</span>
+      </label>
+      <label class="flex items-center gap-1.5 text-[0.938rem]">
+        <input type="radio" name="price" />
+        <span>$1000+</span>
+        <span class="text-xs text-slate-500">(8)</span>
+      </label>
+    </div>
+  </section>
+  <section
+    class="bg-slate-950 py-16 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8"
+  >
+    <!-- Product Card -->
+    <article
+      class="relative bg-slate-900/80 backdrop-blur-sm text-white p-6 rounded-2xl shadow-lg hover:shadow-blue-500/30 border border-slate-800 transition-all duration-500 transform hover:-translate-y-2"
+      data-aos="fade-up"
+    >
+      <!-- Badge -->
+      <div
+        class="absolute top-4 right-4 bg-blue-500 text-xs font-bold px-3 py-1 rounded-full shadow-md"
+      >
+        New
+      </div>
+      <!-- Image -->
+      <div class="w-full h-100 overflow-hidden rounded-lg mb-4">
+        <img
+          src="./src/image/iphone-16-promax.png"
+          class="w-full h-full object-contain"
+          alt="iphone 16 promax"
+        />
+      </div>
+      <!-- Details -->
+      <h3 class="text-xl font-semibold mb-2">iPhone 16 Pro Max</h3>
+      <p class="text-slate-400 mb-4">
+        Ultimate performance with ProMotion display and improved battery life.
+      </p>
+      <!-- Price + Rating -->
+      <div class="flex justify-between items-center mb-4">
+        <span class="text-blue-400 text-lg font-bold">₦1,200,000</span>
+        <div class="flex items-center">
+          <span class="text-yellow-400">★★★★★</span>
+          <span class="text-slate-500 ml-2">(5.0)</span>
+        </div>
+      </div>
+      <!-- Button -->
+      <button
+        class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/30"
+      >
+        Add to Cart
+        <ion-icon name="cart-outline" class="text-xl"></ion-icon>
+      </button>
+    </article>
+    <!-- Product Card -->
+    <article
+      class="relative bg-slate-900/80 backdrop-blur-sm text-white p-6 rounded-2xl shadow-lg hover:shadow-blue-500/30 border border-slate-800 transition-all duration-500 transform hover:-translate-y-2"
+      data-aos="fade-up"
+    >
+      <!-- Badge -->
+      <div
+        class="absolute top-4 right-4 bg-blue-500 text-xs font-bold px-3 py-1 rounded-full shadow-md"
+      >
+        New
+      </div>
+      <!-- Image -->
+      <div class="w-full h-100 overflow-hidden rounded-lg mb-4">
+        <img
+          src="./src/image/apple-macbook-pro14.png"
+          class="w-full h-full object-contain"
+          alt="Apple Macbook Pro 14"
+        />
+      </div>
+      <!-- Details -->
+      <h3 class="text-xl font-semibold mb-2">Apple Macbook Pro 14</h3>
+      <p class="text-slate-400 mb-4">
+        Ultimate performance with ProMotion display and improved battery life.
+      </p>
+      <!-- Price + Rating -->
+      <div class="flex justify-between items-center mb-4">
+        <span class="text-blue-400 text-lg font-bold">₦1,200,000</span>
+        <div class="flex items-center">
+          <span class="text-yellow-400">★★★★★</span>
+          <span class="text-slate-500 ml-2">(5.0)</span>
+        </div>
+      </div>
+      <!-- Button -->
+      <button
+        class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/30"
+      >
+        Add to Cart
+        <ion-icon name="cart-outline" class="text-xl"></ion-icon>
+      </button>
+    </article>
+    <article
+      class="relative bg-slate-900/80 backdrop-blur-sm text-white p-6 rounded-2xl shadow-lg hover:shadow-blue-500/30 border border-slate-800 transition-all duration-500 transform hover:-translate-y-2"
+      data-aos="fade-up"
+    >
+      <!-- Badge -->
+      <div
+        class="absolute top-4 right-4 bg-red-500 text-xs font-bold px-3 py-1 rounded-full shadow-md"
+      >
+        Hot
+      </div>
+      <!-- Image -->
+      <div class="w-full h-100 overflow-hidden rounded-lg mb-4">
+        <img
+          src="./src/image/samsung-s25-ultra.png"
+          class="w-full h-full object-contain"
+          alt="samsung s25 ultra"
+        />
+      </div>
+      <!-- Details -->
+      <h3 class="text-xl font-semibold mb-2">Samsung s25 Ultra</h3>
+      <p class="text-slate-400 mb-4">
+        Ultimate performance with ProMotion display and improved battery life.
+      </p>
+      <!-- Price + Rating -->
+      <div class="flex justify-between items-center mb-4">
+        <span class="text-blue-400 text-lg font-bold">₦1,200,000</span>
+        <div class="flex items-center">
+          <span class="text-yellow-400">★★★★★</span>
+          <span class="text-slate-500 ml-2">(5.0)</span>
+        </div>
+      </div>
+      <!-- Button -->
+      <button
+        class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/30"
+      >
+        Add to Cart
+        <ion-icon name="cart-outline" class="text-xl"></ion-icon>
+      </button>
+    </article>
+    <article
+      class="relative bg-slate-900/80 backdrop-blur-sm text-white p-6 rounded-2xl shadow-lg hover:shadow-blue-500/30 border border-slate-800 transition-all duration-500 transform hover:-translate-y-2"
+      data-aos="fade-up"
+    >
+      <!-- Badge -->
+      <div
+        class="absolute top-4 right-4 bg-green-500 text-xs font-bold px-3 py-1 rounded-full shadow-md"
+      >
+        Bestseller
+      </div>
+      <!-- Image -->
+      <div class="w-full h-100 overflow-hidden rounded-lg mb-4">
+        <img
+          src="./src/image/google-pixel-9-pro.png"
+          class="w-full h-full object-contain"
+          alt="google pixel 9 pro"
+        />
+      </div>
+      <!-- Details -->
+      <h3 class="text-xl font-semibold mb-2">Google Pixel 9 Pro</h3>
+      <p class="text-slate-400 mb-4">
+        Ultimate performance with ProMotion display and improved battery life.
+      </p>
+      <!-- Price + Rating -->
+      <div class="flex justify-between items-center mb-4">
+        <span class="text-blue-400 text-lg font-bold">₦1,200,000</span>
+        <div class="flex items-center">
+          <span class="text-yellow-400">★★★★★</span>
+          <span class="text-slate-500 ml-2">(5.0)</span>
+        </div>
+      </div>
+      <!-- Button -->
+      <button
+        class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/30"
+      >
+        Add to Cart
+        <ion-icon name="cart-outline" class="text-xl"></ion-icon>
+      </button>
+    </article>
+  </section>
+</main>
