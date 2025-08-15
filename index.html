@@ -127,21 +127,25 @@
           <div class="space-y-3">
             <p class="text-white font-medium">Quick Links</p>
             <div class="flex flex-col gap-3">
-              <a href="#">Home</a>
-              <a href="#">Shop</a>
-              <a href="#">About Us</a>
-              <a href="#">Contact</a>
-              <a href="#">FAQ</a>
+              <a href="/" onclick="route()">Home</a>
+              <a href="/shop" onclick="route()">Shop</a>
+              <a href="/about" onclick="route()">About Us</a>
+              <a href="/contact" onclick="route()">Contact</a>
+              <a
+                href="/contact"
+                onclick='route(); document.querySelector(".faq-view").scrollIntoView({behavior:"smooth"})'
+                >FAQ</a
+              >
             </div>
           </div>
           <div class="space-y-3">
             <p class="text-white font-medium">Support</p>
             <div class="flex flex-col gap-3">
-              <a href="#">Customer Service</a>
-              <a href="#">Warranty</a>
-              <a href="#">Returns & Exchanges</a>
-              <a href="#">Shipping Info</a>
-              <a href="#">Privacy Policy</a>
+              <a href="">Customer Service</a>
+              <a href="">Warranty</a>
+              <a href="">Returns & Exchanges</a>
+              <a href="">Shipping Info</a>
+              <a href="">Privacy Policy</a>
             </div>
           </div>
           <div class="space-y-2 pb-8">
@@ -203,9 +207,9 @@
         >
           <div>© 2025 Smartech. All rights reserved.</div>
           <div class="flex justify-center gap-5 font-medium">
-            <a href="#">Terms of Service</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Cookie Policy</a>
+            <a href="">Terms of Service</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Cookie Policy</a>
           </div>
           <div>
             Built By
