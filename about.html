@@ -79,7 +79,7 @@
       >
         <ion-icon name="ribbon-outline"></ion-icon> 15+ Years of Excellence
       </span>
-      <h1 class="text-5xl lg:text-5xl font-bold">
+      <h1 class="text-5xl lg:text-6xl font-bold">
         About
         <span
           class="bg-gradient-to-r from-blue-500 from-10% via-sky-500 via-30% to-indigo-800 to-90% bg-clip-text text-transparent"
@@ -87,11 +87,11 @@
         </span>
       </h1>
       <p
-        class="text-xl lg:text-center lg:max-w-2xl text-slate-400 text-pretty m-auto mb-10"
+        class="text-xl lg:text-center lg:max-w-4xl text-slate-400 text-pretty m-auto mb-10"
       >
         We're more than just a mobile retailer. We're technology enthusiasts,
         innovation advocates, and customer champions dedicated to bringing you
-        the world's best smartphones with unmatched service. Our Story
+        the world's best smartphones with unmatched service.
       </p>
 
       <div
@@ -116,7 +116,7 @@
     </header>
     <main class="bg-black/30 backdrop-blur-lg py-15.5">
       <section
-        class="grid grid-cols-2 px-4 py-15 place-items-center text-center gap-y-10"
+        class="grid grid-cols-2 lg:grid-cols-4 px-4 py-15 place-items-center text-center gap-y-10"
       >
         <div class="space-y-1">
           <ion-icon
@@ -159,13 +159,15 @@
             >Drives Us
           </span>
         </h2>
-        <p class="text-xl text-center text-slate-400 text-pretty m-auto mb-12">
+        <p
+          class="text-xl text-center text-slate-400 text-pretty m-auto mb-12 max-w-200"
+        >
           Our core principles shape every decision we make and every interaction
           we have with our customers.
         </p>
-        <div class="space-y-6">
+        <div class="grid gap-5 lg:grid-cols-3">
           <article
-            class="flex flex-col gap-4 p-8 relative bg-slate-900/30 backdrop-blur-sm text-white rounded-2xl shadow-xl transition-transform duration-300 ease-in hover:scale-105"
+            class="flex flex-col gap-4 p-8 relative bg-slate-900/30 backdrop-blur-sm text-white rounded-sm shadow-xl transition-transform duration-300 ease-in hover:scale-105"
           >
             <ion-icon
               class="p-4 text-3xl rounded-full bg-gradient-to-r from-blue-300 from-10% via-sky-500 via-30% to-indigo-800 to-90%"
@@ -179,7 +181,7 @@
             </p>
           </article>
           <article
-            class="flex flex-col gap-4 p-8 relative bg-slate-900/30 backdrop-blur-sm text-white rounded-2xl shadow-xl transition-transform duration-300 ease-in hover:scale-105"
+            class="flex flex-col gap-4 p-8 relative bg-slate-900/30 backdrop-blur-sm text-white rounded-sm shadow-xl transition-transform duration-300 ease-in hover:scale-105"
           >
             <ion-icon
               class="p-4 text-3xl rounded-full bg-gradient-to-r from-blue-300 from-10% via-sky-500 via-30% to-indigo-800 to-90%"
@@ -193,7 +195,7 @@
             </p>
           </article>
           <article
-            class="flex flex-col gap-4 p-8 relative bg-slate-900/30 backdrop-blur-sm text-white rounded-2xl shadow-xl transition-transform duration-300 ease-in hover:scale-105"
+            class="flex flex-col gap-4 p-8 relative bg-slate-900/30 backdrop-blur-sm text-white rounded-sm shadow-xl transition-transform duration-300 ease-in hover:scale-105"
           >
             <ion-icon
               class="p-4 text-3xl rounded-full bg-gradient-to-r from-blue-300 from-10% via-sky-500 via-30% to-indigo-800 to-90%"
@@ -205,6 +207,76 @@
               guide everything we do. We believe technology should bring people
               together, not divide them.
             </p>
+          </article>
+        </div>
+      </section>
+      <section class="px-4 bg-black/15 backdrop-blur-lg py-15 space-y-6">
+        <h2 class="text-4xl font-bold text-center">
+          Meet Our
+          <span
+            class="bg-gradient-to-r from-blue-500 from-10% via-sky-500 via-30% to-indigo-800 to-90% bg-clip-text text-transparent"
+            >Team
+          </span>
+        </h2>
+        <p
+          class="text-xl text-center text-slate-400 text-pretty m-auto mb-12 max-w-200"
+        >
+          The brilliant minds behind Smartech, united by a shared passion for
+          technology and customer success.
+        </p>
+        <div class="grid gap-6 lg:grid-cols-3">
+          <article
+            class="product-card relative bg-white/5 backdrop-blur-md border border-white/20 rounded-2xl shadow-lg text-white w-full hover:scale-105 transition-transform duration-400 ease-in"
+          >
+            <div class="h-96 flex items-center justify-center">
+              <div
+                class="rounded-full h-40 w-40 bg-gradient-to-r from-blue-900 from-10% via-sky-900 via-30% to-indigo-900 to-90%"
+              ></div>
+            </div>
+            <div class="bg-black/45 backdrop-blur-md p-8 shadow">
+              <h3 class="text-xl font-bold">Sarah Johnson</h3>
+              <p class="font-bold text-blue-700 mb-2.5">CEO & Founder</p>
+              <p class="text-sm text-slate-500">
+                Former Apple executive with 15+ years in mobile tech. Passionate
+                about making technology accessible to everyone.
+              </p>
+            </div>
+          </article>
+          <article
+            class="product-card relative bg-white/5 backdrop-blur-md border border-white/20 rounded-2xl shadow-lg text-white w-full hover:scale-105 transition-transform duration-400 ease-in"
+          >
+            <div class="h-96 flex items-center justify-center">
+              <div
+                class="rounded-full h-40 w-40 bg-gradient-to-r from-blue-900 from-10% via-sky-900 via-30% to-indigo-900 to-90%"
+              ></div>
+            </div>
+            <div class="bg-black/45 backdrop-blur-md p-8 shadow">
+              <h3 class="text-xl font-bold">Michael Chen</h3>
+              <p class="font-bold text-blue-700 mb-2.5">CTO</p>
+              <p class="text-sm text-slate-500">
+                Tech visionary who led engineering teams at Google and Samsung.
+                Expert in mobile innovation and AI integration.
+              </p>
+            </div>
+          </article>
+          <article
+            class="product-card relative bg-white/5 backdrop-blur-md border border-white/20 rounded-2xl shadow-lg text-white w-full hover:scale-105 transition-transform duration-400 ease-in"
+          >
+            <div class="h-96 flex items-center justify-center">
+              <div
+                class="rounded-full h-40 w-40 bg-gradient-to-r from-blue-900 from-10% via-sky-900 via-30% to-indigo-900 to-90%"
+              ></div>
+            </div>
+            <div class="bg-black/45 backdrop-blur-md p-8 shadow">
+              <h3 class="text-xl font-bold">Emily Rodriguez</h3>
+              <p class="font-bold text-blue-700 mb-2.5">
+                Head of Customer Experience
+              </p>
+              <p class="text-sm text-slate-500">
+                Customer service expert who transformed support operations at
+                major retailers. Believes in exceeding expectations.
+              </p>
+            </div>
           </article>
         </div>
       </section>
