@@ -1,3 +1,7 @@
+import { displayProduct } from './main';
+import Products from './data';
+
+const footer = document.querySelector('footer');
 const route = (event) => {
   event = event || window.event;
   event.preventDefault();
@@ -33,6 +37,7 @@ const handleLocation = async () => {
     case '/shop':
       link[1].classList.add('text-blue-400'),
         link[1].classList.add('underline');
+      setTimeout(() => displayProduct(Products), 0);
       break;
     case '/about':
       link[2].classList.add('text-blue-400'),
@@ -44,6 +49,7 @@ const handleLocation = async () => {
       break;
   }
   document.querySelector('#main-page').innerHTML = html;
+  footer.classList.remove('hidden');
 };
 
 window.onpopstate = handleLocation;
