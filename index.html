@@ -18,7 +18,7 @@
           <!-- Logo -->
           <a href="/" class="flex items-center">
             <img
-              src="./src/image/Smarte-removebg-preview 1.png"
+              src="/image/Smarte-removebg-preview 1.png"
               alt="Smartech logo"
               class="h-8 object-cover"
             />
@@ -35,25 +35,25 @@
           <div id="menu" class="hidden md:flex space-x-6">
             <a
               href="/"
-              onclick="route()"
+              onclick="route(event)"
               class="hover:text-blue-400 transition-colors duration-300"
               >Home</a
             >
             <a
               href="/shop"
-              onclick="route()"
+              onclick="route(event)"
               class="hover:text-blue-400 transition-colors duration-300"
               >Shop</a
             >
             <a
               href="/about"
-              onclick="route()"
+              onclick="route(event)"
               class="hover:text-blue-400 transition-colors duration-300"
               >About Us</a
             >
             <a
               href="/contact"
-              onclick="route()"
+              onclick="route(event)"
               class="hover:text-blue-400 transition-colors duration-300"
               >Contact</a
             >
@@ -67,25 +67,25 @@
       >
         <a
           href="/"
-          onclick="route()"
+          onclick="route(event)"
           class="nav-item block hover:bg-blue-400/20 py-3 px-4 transition-colors duration-300 ease-in-out"
           >Home</a
         >
         <a
           href="/shop"
-          onclick="route()"
+          onclick="route(event)"
           class="nav-item block hover:bg-blue-400/20 py-3 px-4 transition-colors duration-300 ease-in-out"
           >Shop</a
         >
         <a
           href="/about"
-          onclick="route()"
+          onclick="route(event)"
           class="nav-item block hover:bg-blue-400/20 py-3 px-4 transition-colors duration-300 ease-in-out"
           >About Us</a
         >
         <a
           href="/contact"
-          onclick="route()"
+          onclick="route(event)"
           class="nav-item block hover:bg-blue-400/text-blue-400 hover:underline20 py-3 px-4 transition-colors duration-300 ease-in-out"
           >Contact</a
         >
@@ -99,7 +99,7 @@
         >
           <div class="w-">
             <img
-              src="./src/image/Smarte-removebg-preview 1.png"
+              src="/image/Smarte-removebg-preview 1.png"
               alt="Smartech logo"
               class="object-cover w-30 mb-4"
             />
@@ -127,13 +127,13 @@
           <div class="space-y-3">
             <p class="text-white font-medium">Quick Links</p>
             <div class="flex flex-col gap-3">
-              <a href="/" onclick="route()">Home</a>
-              <a href="/shop" onclick="route()">Shop</a>
-              <a href="/about" onclick="route()">About Us</a>
-              <a href="/contact" onclick="route()">Contact</a>
+              <a href="/" onclick="route(event)">Home</a>
+              <a href="/shop" onclick="route(event)">Shop</a>
+              <a href="/about" onclick="route(event)">About Us</a>
+              <a href="/contact" onclick="route(event)">Contact</a>
               <a
                 href="/contact"
-                onclick='route(); document.querySelector(".faq-view").scrollIntoView({behavior:"smooth"})'
+                onclick='route(event); document.querySelector(".faq-view").scrollIntoView({behavior:"smooth"})'
                 >FAQ</a
               >
             </div>
@@ -222,8 +222,8 @@
         </div>
       </footer>
     </div>
-    <script type="module" src="/src/js/router.js"></script>
     <script type="module" src="/src/js/main.js"></script>
+    <script type="module" src="/src/js/router.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"

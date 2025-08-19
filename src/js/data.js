@@ -9,7 +9,7 @@ const Products = [
     tags: ['Hot', 'bestseller'],
     description:
       'Samsung Galaxy S25 Ultra  flagship power with Snapdragon 8 Gen 5 and S Pen.',
-    image: '/src/image/samsung-s25-ultra.png',
+    image: '/image/samsung-s25-ultra.png',
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const Products = [
     tags: ['Bestseller'],
     description:
       'Google Pixel 9 Pro  Tensor G4 AI chip, and pro-grade 50 MP triple-camera magic.',
-    image: '/src/image/google-pixel-9-pro.png',
+    image: '/image/google-pixel-9-pro.png',
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const Products = [
     tags: ['Hot'],
     description:
       'iPhone 15 Pro Max with A17 Pro speed, titanium build, 5× optical zoom, and USB-C ready',
-    image: '/src/image/iphone-16-promax.png',
+    image: '/image/iphone-16-promax.png',
   },
   {
     id: 4,
@@ -44,7 +44,7 @@ const Products = [
     rating: 4.5,
     tags: ['New'],
     description: 'Dell XPS 13 with InfinityEdge display and sleek design.',
-    image: '/src/image/dell-xps-13.png',
+    image: '/image/dell-xps-13.png',
   },
   {
     id: 5,
@@ -55,7 +55,7 @@ const Products = [
     rating: 4.7,
     tags: ['Bestseller', 'hot'],
     description: 'Industry-leading noise cancelling wireless headphones.',
-    image: '/src/image/Sony-WH-1000XM5.png',
+    image: '/image/Sony-WH-1000XM5.png',
   },
   {
     id: 6,
@@ -66,7 +66,7 @@ const Products = [
     rating: 4.8,
     tags: ['Hot'],
     description: 'Apple Watch Ultra for extreme sports and adventure.',
-    image: '/src/image/Apple-Watch-Ultra.png',
+    image: '/image/Apple-Watch-Ultra.png',
   },
 
   {
@@ -78,7 +78,7 @@ const Products = [
     rating: 4.7,
     tags: ['Bestseller'],
     description: 'Apple iPad Pro with M2 chip and Liquid Retina XDR display.',
-    image: '/src/image/iPad-Pro-12.9.png',
+    image: '/image/iPad-Pro-12.9.png',
   },
   {
     id: 8,
@@ -89,7 +89,7 @@ const Products = [
     rating: 4.4,
     tags: ['New'],
     description: 'Galaxy Tab S9 with AMOLED display and S Pen included.',
-    image: '/src/image/Samsung-Galaxy-Tab-S9.png',
+    image: '/image/Samsung-Galaxy-Tab-S9.png',
   },
 
   {
@@ -101,7 +101,7 @@ const Products = [
     rating: 4.3,
     tags: ['Bestseller'],
     description: 'Fitbit Charge 6 fitness tracker with health monitoring.',
-    image: '/src/image/fitbit.png',
+    image: '/image/fitbit.png',
   },
   {
     id: 10,
@@ -112,7 +112,7 @@ const Products = [
     rating: 4.9,
     tags: ['Bestseller', 'hot'],
     description: 'Canon EOS R5 mirrorless camera with 8K video recording.',
-    image: '/src/image/Canon-EOS-R5.png',
+    image: '/image/Canon-EOS-R5.png',
   },
   {
     id: 11,
@@ -124,7 +124,7 @@ const Products = [
     tags: ['Bestseller'],
     description:
       'MacBook Pro 14-inch — M3 Pro power, Liquid Retina XDR brilliance, all-day battery.',
-    image: '/src/image/apple-macbook-pro14.png',
+    image: '/image/apple-macbook-pro14.png',
   },
   {
     id: 12,
@@ -135,7 +135,7 @@ const Products = [
     rating: 4.6,
     tags: ['New'],
     description: 'Apple AirPods Pro with improved noise cancellation.',
-    image: '/src/image/AirPods-Pro-2.png',
+    image: '/image/AirPods-Pro-2.png',
   },
 ];
 

@@ -15,11 +15,11 @@ const route = (event) => {
 };
 
 const routes = {
-  404: '/src/pages/index.html',
-  '/': '/src/pages/index.html',
-  '/shop': '/src/pages/shop.html',
-  '/contact': '/src/pages/contact.html',
-  '/about': '/src/pages/about.html',
+  404: '/pages/index.html',
+  '/': '/pages/index.html',
+  '/shop': '/pages/shop.html',
+  '/contact': '/pages/contact.html',
+  '/about': '/pages/about.html',
 };
 
 const handleLocation = async () => {
