@@ -1,25 +1,5 @@
 import AOS from 'aos';
 
-import Swiper from 'swiper';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import { Autoplay, Pagination } from 'swiper/modules';
-
-setTimeout(() => {
-  const heroSwiper = new Swiper('.hero-swiper', {
-    modules: [Pagination, Autoplay],
-    loop: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  });
-}, 1000);
-
 const menuBtn = document.getElementById('menu-btn');
 const mobileMenu = document.getElementById('mobile-menu');
 
@@ -83,6 +63,7 @@ const displayProduct = (products) => {
       <!-- Image -->
       <div class="w-full h-100 overflow-hidden rounded-lg mb-4">
         <img
+        l loading="lazy"
           src=${image}
           class="w-full h-full object-contain"
           alt="${name}"

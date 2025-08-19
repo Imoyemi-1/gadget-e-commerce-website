@@ -1,5 +1,9 @@
 import { displayProduct } from './main';
 import Products from './data';
+import Swiper from 'swiper';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Autoplay, Pagination } from 'swiper/modules';
 
 const footer = document.querySelector('footer');
 const route = (event) => {
@@ -50,6 +54,20 @@ const handleLocation = async () => {
   }
   document.querySelector('#main-page').innerHTML = html;
   footer.classList.remove('hidden');
+
+  // add swiper to hero product display
+  const heroSwiper = new Swiper('.hero-swiper', {
+    modules: [Pagination, Autoplay],
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
 };
 
 window.onpopstate = handleLocation;
